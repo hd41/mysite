@@ -33,6 +33,7 @@ CORS_ORIGIN_ALLOW_ALL = DEBUG
 
 INSTALLED_APPS = [
     'corsheaders',
+    'form1.apps.Form1Config',
     'polls.apps.PollsConfig',
     'django.contrib.admin',
     'django.contrib.auth',

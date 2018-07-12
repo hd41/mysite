@@ -1,0 +1,19 @@
+.container{
+  width: 90%;
+  margin: auto;
+  margin-top: 20%;
+}
+
+.box{
+  width: 33%;
+  height: 300px;
+  display: inline-block;
+  margin: auto;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 300px;
+  background-color: #42f4b6;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 150, 0, 0.6);
+}
