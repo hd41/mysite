@@ -1,0 +1,107 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/page2.css' %}" />
+<div class="body_form">
+  <header>
+    <center><h1>Registration Form</h1></center>
+  </header>
+  <form class="reg_form" action="submit" method="post">
+    {% csrf_token %}
+    <div class="bda_div">
+      <div class="left-small-div" style="width: 45%; float:left;">
+        First name:
+      </div>
+      <div class="right-small-div" style="width: 50%; float: right;">
+        <input type="text" name="fname" value="" required>
+      </div>
+    </div>
+
+    <div class="bda_div">
+      <div class="left-small-div" style="width: 45%; float:left;">
+        Last Name:
+      </div>
+      <div class="right-small-div" style="width: 50%; float: right;">
+        <input type="text" name="lname" value="" required>
+      </div>
+    </div>
+
+    <div class="bda_div">
+      <div class="left-small-div" style="width: 45%; float:left;">
+        Email:
+      </div>
+      <div class="right-small-div" style="width: 50%; float: right;">
+        <input type="email" name="mail" value="" required>
+      </div>
+    </div>
+
+    <div class="bda_div">
+      <div class="left-small-div" style="width: 45%; float:left;">
+        Phone:
+      </div>
+      <div class="right-small-div" style="width: 50%; float: right;">
+        <input type="phone" name="phone" value="" id="phone" pattern=".{10,10}"required>
+      </div>
+    </div>
+
+    <div class="bda_div">
+      <div class="left-small-div" style="width: 45%; float:left;">
+        City:
+      </div>
+      <div class="right-small-div" style="width: 50%; float: right;">
+        <input type="text" name="city" value="" required>
+      </div>
+    </div>
+
+    <div class="bda_div">
+      <div class="left-small-div" style="width: 45%; float:left; height: 100%;">
+        Country:
+      </div>
+      <div class="right-small-div" style="width: 50%; float:right; height:100%;">
+        <select name = 'country'>
+            <option value="India">India</option>
+            <option value="USA">United Staes of America</option>
+            <option value="UK">United Kingdom</option>
+            <option value="Germany">Germany</option>
+            <option value="Jamaica">Jamaica</option>
+            <option value="Lebanon">Lebanon</option>
+          </select>
+      </div>
+    </div>
+
+    <div class="bda_div">
+      <div class="left-small-div" style="width: 45%; float:left;">
+        Address:
+      </div>
+      <div class="right-small-div" style="width: 50%; float: right;">
+        <textarea id="txtarea" name="address" rows="4" required></textarea>
+      </div>
+    </div>
+
+    <div class="error" style="margin-top:18%;">
+      <center><p id="error"></p></center>
+    </div>
+
+    <div class="submit_btn">
+      <center><button>Submit</button></center>
+    </div>
+
+  </form>
+</div>
+
+<!-- <script type="text/javascript">
+  function showtime(){
+    now = new Date();
+    f_date = now.getDate()+"/"+now.getMonth()+"/"+now.getFullYear()+"  "+now.getHours()+':'+now.getMinutes()+':'+now.getSeconds();
+    document.getElementById('date').innerHTML = f_date;
+  }
+
+  setInterval("showtime()", 100);
+
+
+  function validate(){
+    var phone_value = document.getElementById('phone').value;
+    if(phone_value.length <10 || phone_value.length>10){
+        alert("bhai kis country ka phone no. dala h??");
+        document.getElementById('error').innerHTML = "Entered wrong phone number";
+    }
+  }
+</script> -->

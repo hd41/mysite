@@ -1,0 +1,44 @@
+body{
+  padding: 4%;
+  background: linear-gradient(to right, #4286f4, #f441a9);
+}
+
+.body_form{
+  background-color: white;
+  padding: 4%;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,1);
+}
+.reg_form{
+  padding-top: 4%;
+  padding-bottom: 4%;
+
+}
+.bda_div{
+  margin: 6%;
+  min-height: 100%;
+}
+
+button{
+  display: block;
+  border-radius: 0%;
+  padding: 15px;
+  background-color: #4286f4;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  border-width: 0;
+  outline: none;
+  border-radius: 2px;
+  color: white;
+}
+
+#txtarea {
+  border: 1px solid #black;
+  background-color: #fffff0;
+  width: 80%;
+  padding: 4px;
+}

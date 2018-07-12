@@ -1,0 +1,20 @@
+body{
+  background: linear-gradient(to right, #a0b5d8, #4286f4);
+}
+
+.container{
+  width: 80%;
+  margin: auto;
+}
+
+.question_div{
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  text-align: center;
+  border: 1px solid black;
+  box-shadow: 0 2px 4px rgba(0,0,0,1);
+  border-radius: 10px;
+  min-height: 80px;
+  background: linear-gradient(to right, #4286f4, #a0b5d8);
+}

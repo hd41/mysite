@@ -1,0 +1,35 @@
+{% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'polls/question_insertion.css' %}" />
+<script type="text/javascript" src="{% static 'polls/question_insertion.js' %}"></script>
+<div class="container">
+  <center><h1>Add Question:</h1></center>
+  <form class="" action="{% url 'polls:insert_ques' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" id="num" name="choice_n" value="1">
+    <div class="question_div">
+      <div class="left_div">
+        Question_text:
+      </div>
+
+      <div class="right-field">
+        <input type="text" name="ques" value="">
+      </div>
+    </div>
+
+    <div class="question_div">
+      <div class="left_div">
+        <p style="vertical-align:middle;">Choice(s):</p>
+      </div>
+      <div class="right-field" id="choice_field">
+        <input type="text" name="ip1" value="">&emsp;
+        <button type="button" onclick="addField()" name="">+</button>
+      </div>
+    </div>
+
+    <div class="submit_div">
+      <center>
+      <button type="button" name="button">Submit</button></center>
+    </div>
+
+  </form>
+</div>
